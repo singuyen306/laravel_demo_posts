@@ -1,0 +1,72 @@
+/*
+custom css for modal post detail
+ */
+#modal-post-detail{
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    bottom: 0;
+    padding: 0;
+    display: none;
+}
+#modal-post-detail .ui-modal-contents-inner{
+    top: 0;
+    background: transparent;
+    border: none;
+}
+#modal-post-detail .ui-modal-contents-inner .ui-modal-contents{
+    margin: 20px 0 80px;
+    background-color: #fff;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#modal-post-detail .container{
+    padding: 0;
+    margin: 0;
+}
+#modal-post-detail .container .post-details{
+    padding: 0 15px;
+}
+.ui-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(36,40,42,0.3);
+    z-index: 9999;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9;
+    display: none;
+}
+.navbar-nav .search-form{
+    width: 290px;
+}
+.navbar-nav .search-form .form-group{
+    position: relative;
+}
+.navbar-nav .search-form input{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    background: none;
+}
+
+.navbar-nav .search-form .submit{
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 0.9em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
