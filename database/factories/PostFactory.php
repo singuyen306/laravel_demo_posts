@@ -17,7 +17,7 @@ $factory->define(App\Model\Post::class, function (Faker $faker) {
     return [
         'user_id' => rand(1, 10),
         'title' => $faker->sentence(5),
-        'body' => $faker->text(2000),
+        'body' => $faker->text(8000),
         'cover' => $faker->imageUrl(),
         'approved' => rand(0, 1)
     ];
