@@ -26,3 +26,7 @@ Route::group(['namespace' => 'Auth'], function (){
 Route::get('/', 'PostsController@index')->name('frontend_home');
 Route::get('/posts/has-exist-post', 'PostsController@hasExistPost')->name('frontend_has_exist_post');
 Route::resource('posts', 'PostsController');
+
+// Froala management image
+Route::post('/files/post', 'Froala\FileUploadsController@store')->name('froalaUpload');
+Route::resource('/fileuploads', 'Froala\FileUploadsController');

@@ -19,7 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('title')->unique();
             $table->longText('body')->nullable();
             $table->string('cover')->nullable();
-            $table->tinyInteger('approved')->comment('1: approved');
+            $table->tinyInteger('approved')->default(0)->comment('1: approved');
             $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });

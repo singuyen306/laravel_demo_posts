@@ -33,4 +33,11 @@ class Helper {
         return '/' . $uploadPath . '/' . $imageName;
     }
 
+    public static function checkPermisionAndCreateFoder($uploadPath) {
+        if (!is_dir($uploadPath)) {
+            // dir doesn't exist, make it
+            mkdir($uploadPath, 0777, true);
+        }
+    }
+
 }

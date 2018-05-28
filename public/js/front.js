@@ -210,20 +210,6 @@ var twentyci = {
                 return false;
             }
         });
-        // $.ajax({
-        //     url: 'posts/has-exist-post',
-        //     type: 'get',
-        //     dataType: 'json',
-        //     async: false,
-        //     data: {title: $(title).val()},
-        //     success: function (response) {
-        //         if(!response.status){
-        //             twentyci.showMessageError(twentyci.postForm, response.message);
-        //             twentyci.focusFieldError(title);
-        //             return false;
-        //         }
-        //     }
-        // })
     }
 };
 $(document).ready(function () {

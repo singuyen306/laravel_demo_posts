@@ -67,3 +67,10 @@ custom css for modal post detail
     top: 0;
     right: 0;
 }
+.create-post-page{
+    height: 100vh;
+    overflow-y: scroll;
+}
+.post-body img{
+    width: 100%;
+}

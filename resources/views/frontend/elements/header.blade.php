@@ -11,7 +11,7 @@
                     @else
                         @include('frontend.auth.login')
                         <!-- register form -->
-                            @include('frontend.auth.register')
+                        @include('frontend.auth.register')
                     @endif
                 </div>
             </div>
