@@ -17,9 +17,6 @@ custom css for modal post detail
 #modal-post-detail .ui-modal-contents-inner .ui-modal-contents{
     margin: 20px 0 80px;
     background-color: #fff;
-    overflow: scroll;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 #modal-post-detail .container{
     padding: 0;

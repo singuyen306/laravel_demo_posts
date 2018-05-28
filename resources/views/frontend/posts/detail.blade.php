@@ -12,11 +12,11 @@
                                 <div class="title"><span>{{ $post->name }}</span></div>
                             </a>
                             <div class="d-flex align-items-center flex-wrap">
-                                <div class="date"><i class="icon-clock"></i> {{ \App\Helper\Helper::diffForHumans($post->created_at) }}</div>
+                                <div class="date"><i class="icon-clock"></i> {{ Helper::diffForHumans($post->created_at) }}</div>
                             </div>
                         </div>
                         <div class="post-body">
-                            {{ $post->body }}
+                            @markdown($post->body)
                         </div>
                     </div>
                 </div>
