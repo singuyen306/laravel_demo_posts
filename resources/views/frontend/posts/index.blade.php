@@ -19,7 +19,7 @@
                             <a href="javascript:void(0);" class="view-post-detail" data-post-id="{{ $post->id }}">
                                 <h3 class="h4">{{$post->title}}</h3>
                             </a>
-                            <p class="text-muted">{{ str_limit($post->body, 300) }}</p>
+                            <p class="text-muted">{!!  str_limit($post->body, 300) !!}</p>
                             <footer class="post-footer d-flex align-items-center">
                                 <a href="#" class="author d-flex align-items-center flex-wrap">
                                     <div class="title"><span>{{$post->name}}</span></div>
