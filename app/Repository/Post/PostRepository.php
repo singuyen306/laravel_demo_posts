@@ -60,7 +60,6 @@ class PostRepository extends BaseRepository implements PostInterface
             ->select([
                 Constant::POST_TABLE.'.id',
                 Constant::POST_TABLE.'.title',
-                Constant::POST_TABLE.'.description',
                 Constant::POST_TABLE.'.cover',
                 Constant::POST_TABLE.'.body',
                 Constant::POST_TABLE.'.created_at',
